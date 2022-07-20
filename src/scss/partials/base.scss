@@ -48,6 +48,10 @@ body a {
   color: #ffffff;
 }
 
+.footer-links-social {
+  display: none;
+}
+
 .bg-white {
   background: #ffffff;
   color: #2a2b2c;
@@ -92,7 +96,7 @@ body a {
 }
 
 .tc2021-header-container {
-  background: #2a2b2c;
+  background: #000000;
   padding: 5rem 0;
 }
 
@@ -881,7 +885,7 @@ body h6,
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    max-width: 1400px;
   }
 }
 
@@ -1048,7 +1052,7 @@ Recap Page
 }
 
 .tc2021-main-v .tc2021-nav {
-  max-width: 1170px;
+  max-width: 1400px;
 }
 .tc2021-main-v .tc2021-nav a {
   color: #ffffff;
@@ -1064,30 +1068,33 @@ Recap Page
 }
 
 .tc2021-main-v .tc2021-virtual {
-  max-width: 1170px;
+  max-width: 1400px;
   padding-top: 5rem;
   padding-bottom: 3rem;
   margin: 0 auto;
+  
 }
 
 .tc2021-main-v .tc2021-virtual-inner {
-  padding: 0 40px;
+  //padding: 0 40px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 .tc2021-main-v .tc2021-virtual-inner img {
   padding: 20px 0;
-  max-width: 300px;
+  //max-width: 300px;
   display: block;
   margin: 0 auto;
 }
 .tc2021-main-v .tc2021-virtual-inner p {
   color: #ffffff;
   font-size: 20px !important;
-  margin-top: 20px;
+  margin-top: 60px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .tc2021-main-v .tc2021-kickoff {
-  max-width: 1170px;
+  max-width: 1400px;
   margin: 100px auto 70px;
   color: #ffffff;
 }
@@ -1202,7 +1209,7 @@ Recap Page
   text-align: center;
   text-transform: uppercase;
   font-size: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   letter-spacing: 5px;
   font-family: SourceSansPro-Light, Arial, Helvetica, sans-serif;
 }
@@ -1222,7 +1229,7 @@ Recap Page
   padding: 5rem 30px;
   font-size: 1.75rem;
   text-align: left;
-  margin: 60px auto;
+  margin: 0px auto;
 }
 .tc2021-main-v .tc2021-virtual-info .tc2021-questions a,
 .tc2021-main-v .tc2021-virtual-info .tc2021-questions a:hover,
@@ -1240,7 +1247,7 @@ Recap Page
 }
 
 .tc2021-virtual-info-inner {
-  max-width: 1170px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 

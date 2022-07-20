@@ -16,12 +16,11 @@ class App extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="tc2021-header-image">
-                    <img
-                      src="https://arctravelconnect.com/globalassets/Home2/2021/JOIN-INDUSTRY-DISCUSSIONS.svg"
-                      alt=""
-                    />
-                    <a href="/episodes" className="ctaBtn">
-                      Join Us
+                    <a href="/episodes">
+                      <img
+                        src="https://arctravelconnect.com/globalassets/Home2/2022/tc22-homepage-jumbo.png"
+                        alt="ARC TravelConnect"
+                      />
                     </a>
                   </div>
                 </div>
@@ -29,117 +28,176 @@ class App extends Component {
             </div>
           </div>
 
-          <div className="tc2021-episode-watch">
+          <div className="">
             <div className="container">
               <div className="row">
-                <div className="col-lg-5">
-                  <div style={{ postion: "relative" }}>
-                    <img
-                      src="https://arctravelconnect.com/globalassets/Home2/2021/CURRENT-EPISODE.svg"
-                      alt=""
-                    />
-                    <div className="tc2021-episode-num">15</div>
+                <div className="col-lg-12 text-center">
+                  <img
+                    className="img-fluid"
+                    src="https://arctravelconnect.com/globalassets/Home2/2022/tc22-current-episode.png"
+                    alt="ARC TravelConnect"
+                  />
+                  <div className="tc22-episode-box">
+                    <div className="container">
+                      <div className="row align-items-center">
+                        <div className="col-lg-6">
+                          <div class="usa-embed-container mb-0">
+                            <iframe
+                              width="700px"
+                              src="https://www.youtube.com/embed/ylBV3q8-5IM"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                        </div>
+                        <div className="col-lg-6">
+                          <h2 className="text-white">
+                            ARC TravelConnect Virtual Series: Growth and
+                            Innovation at the Denver Airport
+                          </h2>
+                          <a href="/" className="tc22-watchnow">
+                            Watch Now{" "}
+                            <i
+                              className="fa fa-caret-right ml-2"
+                              aria-hidden="true"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div className="col-lg-7">
-                  <h2>
-                    ARC TravelConnect Virtual Series: Growth and Innovation at
-                    the Denver Airport
-                  </h2>
-                  <p>
-                    ARC’s Sara Hetland welcomes Laura L. Jackson, vice president
-                    of air services development at Denver International Airport
-                    (DEN), to discuss the latest developments and initiatives
-                    shaping the airport.
-                  </p>
-
-                  <a
-                    href="/episodes/growth-and-innovation-at-the-denver-airport/"
-                    className="ctaBtn"
-                  >
-                    View Now
-                  </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="tc2021-virtual text-center">
-            <div className="row">
+          <div
+            style={{
+              background: "#232323",
+              zIndex: "-1",
+              marginTop: "-180px",
+              paddingTop: "180px",
+            }}
+          >
+            <div className="tc2021-virtual text-center">
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="tc2021-virtual-title">
+                    What You'll Learn In This Series
+                  </div>
+                </div>
+              </div>
+              <div className="row align-content-start text-left">
+                <div className="col-lg-4">
+                  <div className="tc2021-virtual-inner">
+                    <img
+                      style={{ width: "100%" }}
+                      className="pb-0 img-fluid"
+                      src="https://arctravelconnect.com/globalassets/Home2/2022/tc22-traveldata.png"
+                      alt="Travel Data & Trends"
+                    />
+                    <p>
+                      Curious about the latest travel data and trends? We talk
+                      to industry leaders about travel recovery post-pandemic,
+                      the evolving fraud landscape, what consumer spending can
+                      tell us about the future, and more.
+                    </p>
+                    <a href="/" className="tc22-link bold">
+                      Watch Episodes On <br />
+                      This Topic{" "}
+                      <i
+                        className="fa fa-caret-right ml-2"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-4">
+                  <div className="tc2021-virtual-inner">
+                    <img
+                      style={{ width: "100%" }}
+                      className="pb-0 img-fluid"
+                      src="https://arctravelconnect.com/globalassets/Home2/2022/tc22-travelretailing.png"
+                      alt="Travel Retailing"
+                    />
+                    <p>
+                      Consumers want streamlined, easy-to-manage travel
+                      experiences, no matter which channel they book through. We
+                      converse with other experts about how to enhance the
+                      travel retailing experience, with focus on distribtion,
+                      payments and technology.
+                    </p>
+                    <a href="/" className="tc22-link bold">
+                      Watch Episodes On <br />
+                      This Topic{" "}
+                      <i
+                        className="fa fa-caret-right ml-2"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-4">
+                  <div className="tc2021-virtual-inner">
+                    <img
+                      className="pb-0 img-fluid"
+                      style={{ width: "100%" }}
+                      src="https://arctravelconnect.com/globalassets/Home2/2022/tc22-travelinnovation.png"
+                      alt="Travel Innovation "
+                    />
+                    <p>
+                      Travel opens up the world to us - and opens our minds to
+                      new ideas. We discuss work culture, the future of travel,
+                      and other innovative topics with industry thought leaders.
+                    </p>
+                    <a href="/" className="tc22-link bold">
+                      Watch Episodes On <br />
+                      This Topic{" "}
+                      <i
+                        className="fa fa-caret-right ml-2"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="tc22-stats">
+            <div className="container">
               <div className="col-lg-12">
-                <div className="tc2021-virtual-title">About the Series</div>
                 <img
-                  style={{ maxWidth: "1000px", margin: "2rem auto 4rem" }}
-                  src="https://arctravelconnect.com/globalassets/Home2/2021/STATS.svg"
+                  className="img-fluid"
+                  src="https://arctravelconnect.com/globalassets/Home2/2022/tc22-stats.png"
                   alt=""
                 />
               </div>
             </div>
-            <div className="row align-content-start">
-              <div className="col-lg-4">
-                <div className="tc2021-virtual-inner">
-                  <img
-                    className="pb-0"
-                    src="https://arctravelconnect.com/globalassets/Home2/2020/virtual/tcvirtual-the-core.svg"
-                    alt="The Core of this Event is Connection "
-                  />
-                  <img
-                    className="pt-0"
-                    src="https://arctravelconnect.com/globalassets/Home2/2021/DOTS-UNDER-THE-CORE.svg"
-                    alt=""
-                  />
-                  <p>
-                    Seven years ago, ARC created the TravelConnect conference to
-                    bring together travel industry leaders to discuss the trends
-                    shaping the future of travel. At the core of this event is
-                    connection: TravelConnect is designed to spark meaningful
-                    conversations across the travel ecosystem.
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="tc2021-virtual-inner">
-                  <img
-                    className="pb-0"
-                    src="https://arctravelconnect.com/globalassets/Home2/2020/virtual/tcvirtual-valuable.svg"
-                    alt="Valuable, Timely Content & Connections "
-                  />
-                  <img
-                    className="pt-0"
-                    src="https://arctravelconnect.com/globalassets/Home2/2021/DOTS-UNDER-VALUABLE.svg"
-                    alt=""
-                  />
-                  <p>
-                    These conversations remain just as important — maybe more so
-                    — in the wake of COVID-19. However, the needs of our
-                    industry have changed. ARC seeks to deliver the valuable,
-                    timely content and connections of TravelConnect while
-                    adapting to the needs of our customers during this
-                    challenging time.
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="tc2021-virtual-inner">
-                  <img
-                    className="pb-0"
-                    src="https://arctravelconnect.com/globalassets/Home2/2020/virtual/tcvirtual-free.svg"
-                    alt="Free Virtual Series "
-                  />
-                  <img
-                    className="pt-0"
-                    src="https://arctravelconnect.com/globalassets/Home2/2021/DOTS-UNDER-FREE.svg"
-                    alt=""
-                  />
-                  <p>
-                    ARC will host a free TravelConnect virtual series of events
-                    throughout 2020 and beyond, bringing together industry
-                    leaders for valuable conversations, and providing
-                    opportunities for attendees to connect with each other.
-                    These virtual events will replace the 2020 in-person
-                    conference originally scheduled for October, which is now
-                    cancelled, propelling ARC and the industry into 2021.
-                  </p>
+          </div>
+
+          <div className="tc22-about">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="tc22-about-box">
+                    <div class="tc2021-virtual-title">About This Series</div>
+                    <img
+                      className="img-fluid"
+                      src="https://arctravelconnect.com/globalassets/Home2/2022/tc22-goal.png"
+                      alt="The Goal is Connection"
+                    />
+                    <p>
+                      The ARC TravelConnect Virtual Series brings together
+                      travel industry leaders to discuss the trends shaping the
+                      future of travel. The goal is connection: sparking
+                      meaningful conversations across the travel ecosystem. As
+                      we navigate fewer in-person events, ARC continues to offer
+                      the thought-provoking content and connections of our
+                      TravelConnect event in a virtual setting.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -187,8 +245,9 @@ class App extends Component {
                   <p
                     style={{
                       maxWidth: "768px",
-                      marginLeft: "auto",
-                      fontSize: "1.25rem !important",
+                      margin: "0 auto",
+                      fontSize: "20px",
+                      lineHeight: "30px"
                     }}
                   >
                     Travelers use a variety of platforms to shop, buy and
