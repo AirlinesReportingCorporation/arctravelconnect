@@ -30,6 +30,13 @@
   flex-direction: column;
 }
 
+.episode-filter {
+  max-width: 425px;
+    max-height: 42px;
+    margin-left: 10px;
+    border: 1px solid #bcbec0;
+}
+
 .episode-meta img {
   width: 40px;
   margin-right: 20px;
@@ -66,8 +73,8 @@
   border-radius: 0;
   border-color: #ffffff;
   margin: 2px;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 32px;
+  padding-right: 32px;
   border-width: 1px;
   margin-top: 0px;
 }
@@ -110,12 +117,12 @@
 
 .episode-sort {
   color: #000000;
-  font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+  font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 180px;
   max-width: 1170px;
-  font-size: 1.35rem;
+  font-size: 0.875rem;
   margin: 0 auto 20px auto;
 }
 

@@ -69,16 +69,29 @@ class Episodes extends Component {
               />
             </div>
             <div className="episode-sort">
-              <select onChange={this.setFilter}>
+              SORT:
+              <select className="episode-filter" onChange={this.setFilter}>
                 <option value="">All</option>
                 <option
-                  selected={this.state.filter == "data-and-trends" ? true : false}
+                  selected={
+                    this.state.filter == "data-and-trends" ? true : false
+                  }
                   value="data-and-trends"
                 >
                   Data and Trends
                 </option>
-                <option value="retailing">Retailing</option>
-                <option value="innovation">Innovation</option>
+                <option
+                  selected={this.state.filter == "retailing" ? true : false}
+                  value="retailing"
+                >
+                  Retailing
+                </option>
+                <option
+                  selected={this.state.filter == "innovation" ? true : false}
+                  value="innovation"
+                >
+                  Innovation
+                </option>
               </select>
             </div>
 
