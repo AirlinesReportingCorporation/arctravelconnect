@@ -11,6 +11,7 @@ var episodes = [
     time: "Available Now",
     date: "June 23, 2022",
     cta: "View Details",
+    tags: "Data and Trends"
   },
   {
     episode: "14",
@@ -20,6 +21,7 @@ var episodes = [
     time: "Available Now",
     date: "February 24, 2022",
     cta: "View Details",
+    tags: "Data and Trends"
   },
   {
     episode: "13",
@@ -29,6 +31,7 @@ var episodes = [
     time: "Available Now",
     date: "October 20, 2021",
     cta: "View Details",
+    tags: "Retailing"
   },
   {
     episode: "12",
@@ -38,6 +41,7 @@ var episodes = [
     time: "Available Now",
     date: "July 22, 2021",
     cta: "View Details",
+    tags: "Data and Trends"
   },
   {
     episode: "11",
@@ -47,6 +51,7 @@ var episodes = [
     time: "Available Now",
     date: "June 29, 2021",
     cta: "View Details",
+    tags: "Retailing, Innovation"
   },
   {
     episode: "10",
@@ -56,6 +61,7 @@ var episodes = [
     time: "Available Now",
     date: "May 13, 2021",
     cta: "View Details",
+    tags: "Retailing"
   },
   {
     episode: "9",
@@ -65,6 +71,7 @@ var episodes = [
     time: "Available Now",
     date: "Apr 28, 2021",
     cta: "View Details",
+    tags: "Retailing, Innovation"
   },
   {
     episode: "8",
@@ -74,6 +81,7 @@ var episodes = [
     time: "Available Now",
     date: "Feb 18, 2021",
     cta: "View Details",
+    tags: "Data and Trends, Innovation"
   },
   {
     episode: "7",
@@ -83,6 +91,7 @@ var episodes = [
     time: "3:00 p.m. EST",
     date: "Dec 15, 2020",
     cta: "View Details",
+    tags: "Innovation"
   },
   {
     episode: "6",
@@ -92,6 +101,7 @@ var episodes = [
     time: "Available Now",
     date: "Nov 18, 2020",
     cta: "View Details",
+    tags: "Retailing, Innovation"
   },
   {
     episode: "5",
@@ -101,6 +111,7 @@ var episodes = [
     time: "Available Now",
     date: "October 14, 2020",
     cta: "View Details",
+    tags: "Data and Trends"
   },
   {
     episode: "4",
@@ -110,6 +121,7 @@ var episodes = [
     time: "Available Now",
     date: "September 17, 2020",
     cta: "View Details",
+    tags: "Data and Trends"
   },
   {
     episode: "3",
@@ -119,6 +131,7 @@ var episodes = [
     time: "Available Now",
     date: "August 19, 2020",
     cta: "View Details",
+    tags: "Retailing, Innovation"
   },
   {
     episode: "2",
@@ -128,16 +141,18 @@ var episodes = [
     time: "Available Now",
     date: "July 27, 2020",
     cta: "View Details",
+    tags: "Innovation"
   },
   {
     episode: "1",
-    name:
-      "<div class='episode-sub'>2020 Outlook:</div> Travel Recovery Trends to Watch",
+    name: "2020 Outlook: Travel Recovery Trends to Watch",
     description: "asdf",
     link: "/episodes/2020-outlook-travel-recovery-trends-to-watch/",
     time: "Available Now",
     date: "June 4, 2020",
     cta: "View Details",
+    tags: "Data and Trends"
+
   },
 ];
 
@@ -159,36 +174,34 @@ class Episodes extends Component {
               />
             </div>
 
-            <div className="tc2020-episode-subtitle">2022 Episodes</div>
-
             <div className="tc2020-episode-list">
-            <div className="row">
-              {episodes.map((episode, i) => {
-                return (
-                    <div key={i}
-                      className=" col-md-3 tc2020-episode"
+              <div className="row">
+                {episodes.map((episode, i) => {
+                  console.log(episode)
+                  return (
+                    <div
+                      key={i}
+                      className=" col-lg-4"
                       id={"episode-" + episode.episode}
                     >
-                          <div className="episode-num">{episode.episode}</div>
+                      <div className="tc2020-episode">
+                        <div className="episode-num">{episode.episode}</div>
+                        <div className="episode-inner">
+                          <div className="episode-date">{episode.date}</div>
                           <div className="episode-name">{episode.name}</div>
-                          <div className="episode-meta">
-                            <div className="episode-date">
-                              <img src="https://www2.arccorp.com/globalassets/home2/2020/virtual/light-gray-calender-icon.svg" />
-                              {episode.date}
-                            </div>
-                            <div className="episode-time">
-                              <img src="https://www2.arccorp.com/globalassets/home2/2020/virtual/light-gray-clock-icon.svg" />
-                              {episode.time}
-                            </div>
-                            <div className="episode-button">
+                          <div className="episode-tags">
+                            {episode.tags}
+                          </div>
+                          <div className="episode-button">
                             <a className="ctaBtn" href={episode.link}>
                               View Details
                             </a>
                           </div>
-                          </div>
-                        </div>                  
-                );
-              })}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
