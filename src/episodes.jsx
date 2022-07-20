@@ -162,21 +162,15 @@ class Episodes extends Component {
             <div className="tc2020-episode-subtitle">2022 Episodes</div>
 
             <div className="tc2020-episode-list">
+            <div className="row">
               {episodes.map((episode, i) => {
                 return (
-                  <div key={i}>
-                    <div
-                      className="tc2020-episode"
+                    <div key={i}
+                      className=" col-md-3 tc2020-episode"
                       id={"episode-" + episode.episode}
                     >
-                      <div className="row no-gutters">
-                        <div className="col-md-1">
                           <div className="episode-num">{episode.episode}</div>
-                        </div>
-                        <div className="col-md-4">
                           <div className="episode-name">{episode.name}</div>
-                        </div>
-                        <div className="col-md-4">
                           <div className="episode-meta">
                             <div className="episode-date">
                               <img src="https://www2.arccorp.com/globalassets/home2/2020/virtual/light-gray-calender-icon.svg" />
@@ -186,20 +180,16 @@ class Episodes extends Component {
                               <img src="https://www2.arccorp.com/globalassets/home2/2020/virtual/light-gray-clock-icon.svg" />
                               {episode.time}
                             </div>
-                          </div>
-                        </div>
-                        <div className="col-md-3">
-                          <div className="episode-button">
+                            <div className="episode-button">
                             <a className="ctaBtn" href={episode.link}>
                               View Details
                             </a>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                          </div>
+                        </div>                  
                 );
               })}
+              </div>
             </div>
           </div>
         </div>

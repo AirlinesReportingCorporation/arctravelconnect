@@ -1,15 +1,28 @@
+
+
 .episode-num {
   color: #ffffff;
-  font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  background: #1fdcc8;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: top;
-  height: 100%;
+    font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    background: #1fdcc8;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 100%;
+    max-height: 122px;
+    max-width: 122px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    top: -65px;
+    z-index: 2;
+    position: absolute;
 }
+
+.tc2020-episode-list > .row > [class*=col-] {
+  margin-right: 22.5px;
+  margin-left: 22.5px;
+  }
 
 .episode-meta {
   display: flex;
@@ -83,7 +96,11 @@
 }
 
 .tc2020-episode {
+  border: 1px solid;
   margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tc2020-episode-title {
