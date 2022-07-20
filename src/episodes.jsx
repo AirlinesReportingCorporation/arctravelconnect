@@ -190,7 +190,7 @@ class Episodes extends Component {
                         <div className="episode-inner">
                           <div className="episode-date">{episode.date}</div>
                           <div className="episode-name">{episode.name}</div>
-                          <div className="dot">·</div>
+                          <div className="dot"></div>
                           <div className="episode-tags">
                             {episode.tags}
                           </div>
