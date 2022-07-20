@@ -169,10 +169,11 @@ class Episodes extends Component {
           <div className="tc2020-episode-container">
             <div className="tc2020-episode-title">
               <img
-                src="https://arctravelconnect.com/globalassets/Home2/2020/virtual/episodes.svg"
+                src="https://arctravelconnect.com/globalassets/Home2/2022/tc22-episodes.png"
                 alt="Episodes"
               />
             </div>
+            <div className="episode-sort"> Sort goes here</div>
 
             <div className="tc2020-episode-list">
               <div className="row">
@@ -189,6 +190,7 @@ class Episodes extends Component {
                         <div className="episode-inner">
                           <div className="episode-date">{episode.date}</div>
                           <div className="episode-name">{episode.name}</div>
+                          <div className="dot">·</div>
                           <div className="episode-tags">
                             {episode.tags}
                           </div>
