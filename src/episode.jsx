@@ -7,6 +7,7 @@ var episodeData = [
     id: 1,
     title: <>2020 Outlook: Travel Recovery Trends to Watch</>,
     description: "",
+    url: "/episodes/2020-outlook-travel-recovery-trends-to-watch/",
     embedUrl: "/episodes/2020-outlook-travel-recovery-trends-to-watch/",
     tag: "",
     date: "June 4, 2020",
