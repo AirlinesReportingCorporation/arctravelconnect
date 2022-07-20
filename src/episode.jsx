@@ -2,9 +2,34 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Nav from "./components/nav";
 
-class Episodes extends Component {
-  constructor() {
-    super();
+var episodeData = [
+  {
+    id: 1,
+    title: <>2020 Outlook: Travel Recovery Trends to Watch</>,
+    description: "",
+    embedUrl: "/episodes/2020-outlook-travel-recovery-trends-to-watch/",
+    tag: "",
+    date: "June 4, 2020",
+  },
+  {
+    id: 15,
+    title: (
+      <>
+        Growth and Innovation at the <br />
+        Denver International Airport
+      </>
+    ),
+    description: "",
+    embedUrl: "",
+    tag: "",
+    date: "",
+  },
+];
+
+class Episode extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
   }
 
   render() {
@@ -16,11 +41,10 @@ class Episodes extends Component {
             <div class="tc2020-article-container">
               <div class="tc2020-article-episode2 d-flex align-items-center justify-content-center">
                 <img src="https://arctravelconnect.com/globalassets/Home2/2020/virtual/episode.svg" />
-                15
+                {episodeData[this.props.number - 1].id}
               </div>
               <div class="tc2020-article-title">
-                Growth and Innovation at the <br />
-                Denver International Airport
+                {episodeData[this.props.number - 1].title}
               </div>
             </div>
           </div>
@@ -115,8 +139,9 @@ class Episodes extends Component {
   }
 }
 
-export default Episodes;
+export default Episode;
 
 var mountNode = document.getElementById("app");
+var value = document.getElementById("app").getAttribute("episode");
 
-ReactDOM.render(<Episodes />, mountNode);
+ReactDOM.render(<Episode number={value} />, mountNode);
