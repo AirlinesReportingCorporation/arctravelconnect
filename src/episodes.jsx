@@ -97,7 +97,7 @@ class Episodes extends Component {
 
             <div className="tc2020-episode-list">
               <div className="row">
-                {episodes.map((episode, i) => {
+                {episodes.reverse().map((episode, i) => {
                   return (
                     <div
                       key={i}
