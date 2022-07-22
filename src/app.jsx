@@ -56,7 +56,7 @@ class App extends Component {
                             ARC TravelConnect Virtual Series: Growth and
                             Innovation at the Denver Airport
                           </h2>
-                          <a href="/" className="tc22-watchnow">
+                          <a href="/episodes/growth-and-innovation-at-the-denver-international-airport/" className="tc22-watchnow">
                             Watch Now{" "}
                             <i
                               className="fa fa-caret-right ml-2"
@@ -103,7 +103,7 @@ class App extends Component {
                       the evolving fraud landscape, what consumer spending can
                       tell us about the future, and more.
                     </p>
-                    <a href="/" className="tc22-link bold">
+                    <a href="/episodes.html?filter=data-and-trends" className="tc22-link bold">
                       Watch Episodes On <br />
                       This Topic{" "}
                       <i
@@ -128,7 +128,7 @@ class App extends Component {
                       travel retailing experience, with focus on distribtion,
                       payments and technology.
                     </p>
-                    <a href="/" className="tc22-link bold">
+                    <a href="/episodes.html?retailing" className="tc22-link bold">
                       Watch Episodes On <br />
                       This Topic{" "}
                       <i
@@ -151,7 +151,7 @@ class App extends Component {
                       new ideas. We discuss work culture, the future of travel,
                       and other innovative topics with industry thought leaders.
                     </p>
-                    <a href="/" className="tc22-link bold">
+                    <a href="/episodes.html?filter=innovation" className="tc22-link bold">
                       Watch Episodes On <br />
                       This Topic{" "}
                       <i
