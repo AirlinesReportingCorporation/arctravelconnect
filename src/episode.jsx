@@ -2,44 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Nav from "./components/nav";
 
-var episodeData = [
-  {
-    id: 1,
-    title: <>2020 Outlook: Travel Recovery Trends to Watch</>,
-    description: "About Here",
-    url: "/episodes/2020-outlook-travel-recovery-trends-to-watch/",
-    embedUrl: "https://www.youtube.com/embed/93hQquGY4fs",
-    tags: "Data and Trends",
-    speakers: "",
-    date: "June 4, 2020",
-  },
-  {
-    id: 2,
-    title: (
-      <>
-        Growth and Innovation at the <br />
-        Denver International Airport
-      </>
-    ),
-    description: "",
-    embedUrl: "",
-    tag: "",
-    date: "",
-  },
-  {
-    id: 15,
-    title: (
-      <>
-        Growth and Innovation at the <br />
-        Denver International Airport
-      </>
-    ),
-    description: "",
-    embedUrl: "",
-    tags: "",
-    date: "",
-  },
-];
+import { episodes } from "./content";
 
 class Episode extends Component {
   constructor(props) {
@@ -56,10 +19,10 @@ class Episode extends Component {
             <div class="tc2020-article-container">
               <div class="tc2020-article-episode2 d-flex align-items-center justify-content-center">
                 <img src="https://arctravelconnect.com/globalassets/Home2/2020/virtual/episode.svg" />
-                {episodeData[this.props.number - 1].id}
+                {episodes[this.props.number - 1].episode}
               </div>
               <div class="tc2020-article-title">
-                {episodeData[this.props.number - 1].title}
+                {episodes[this.props.number - 1].title}
               </div>
             </div>
           </div>
@@ -72,7 +35,10 @@ class Episode extends Component {
                     <div class="usa-embed-container">
                       <iframe
                         width="700px"
-                        src={episodeData[this.props.number - 1].embedUrl}
+                        src={
+                          "https://www.youtube.com/embed/" +
+                          episodes[this.props.number - 1].embedUrl
+                        }
                         frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
@@ -87,9 +53,7 @@ class Episode extends Component {
                       style={{ marginBottom: "60px" }}
                       alt=""
                     />
-                    <p>
-                    {episodeData[this.props.number -1].description}
-                    </p>
+                    <p>{episodes[this.props.number - 1].description}</p>
                   </div>
                   <div className="col-lg-4">
                     <div className="tc22-speaker-titles">
@@ -99,20 +63,34 @@ class Episode extends Component {
                       />
                     </div>
                     <div className="tc22-episode-detail">
-                      {episodeData[this.props.number -1].tags}
+                      {episodes[this.props.number - 1].tags}
                       <i
                         className="fa fa-caret-right ml-2"
                         aria-hidden="true"
                       ></i>
                     </div>
-                    <div className="tc22-speaker-titles" style={{display: episodeData[this.props.number -1].speakers ? "block" : "none"}}>
+                    <div
+                      className="tc22-speaker-titles"
+                      style={{
+                        display: episodes[this.props.number - 1].speakers
+                          ? "block"
+                          : "none",
+                      }}
+                    >
                       <img
                         src="https://arctravelconnect.com/globalassets/Home2/2022/tc22-industryspeakers.png"
                         alt=""
                       />
                     </div>
-                    <div className="tc22-episode-detail">
-                    {episodeData[this.props.number -1].speakers}
+                    <div
+                      className="tc22-episode-detail"
+                      style={{
+                        display: episodes[this.props.number - 1].speakers
+                          ? "block"
+                          : "none",
+                      }}
+                    >
+                      {episodes[this.props.number - 1].speakers}
                     </div>
                     <div className="tc22-speaker-titles">
                       <img
@@ -120,7 +98,9 @@ class Episode extends Component {
                         alt=""
                       />
                     </div>
-                    <div className="tc22-episode-detail">{episodeData[this.props.number -1].date}</div>
+                    <div className="tc22-episode-detail">
+                      {episodes[this.props.number - 1].date}
+                    </div>
                   </div>
                 </div>
               </div>
