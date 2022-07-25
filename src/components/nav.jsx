@@ -23,7 +23,7 @@ class Nav extends Component {
                 <a href="/tc2019/recap">2019 Recap</a>
                 <a href="/2020-recap">2020 Recap</a>
                 <div className="arc-logo ml-lg-auto ml-md-auto d-sm-block">
-                  <div className="d-flex">
+                  <div className="d-flex justify-content-center">
                     <a
                       target="_blank"
                       className="tc2021-underline con-social icon-facebook"
