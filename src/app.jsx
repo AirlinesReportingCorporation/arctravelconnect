@@ -292,7 +292,7 @@ class App extends Component {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-md-3">
+                  <div className="col">
                     <a
                       href="https://www.facebook.com/ARCtalk"
                       title="facebook"
@@ -300,7 +300,7 @@ class App extends Component {
                       className="icon-social icon-facebook"
                     ></a>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col">
                     <a
                       href="https://twitter.com/ARCtalk"
                       title="twitter"
@@ -308,14 +308,14 @@ class App extends Component {
                       className="icon-social icon-twitter"
                     ></a>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col">
                     <a
                       href="https://www.linkedin.com/company/6509/"
                       target="_blank"
                       className="icon-social icon-linkedin"
                     ></a>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col">
                     <a
                       href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw/"
                       target="_blank"

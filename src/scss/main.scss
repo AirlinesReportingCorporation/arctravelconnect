@@ -33,6 +33,7 @@
   padding: 30px;
   margin: 30px;
   text-align: left;
+
   h2 {
     font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif !important;
     font-weight: 600;
@@ -101,4 +102,27 @@ footer .rtf .footer-rtf-links {
 
 .add-content {
   display: none;
+}
+
+@media screen and (max-width: 767.9px) {
+  .tc22-email-link {
+    display: block;
+    font-size: 1.2rem;
+  }
+
+  .tc22-episode-box {
+    margin: 30px 0 0 0;
+
+    h2 {
+      font-size: 25px;
+      padding: 10px 0;
+    }
+  }
+
+  .tc22-about-box {
+    padding: 0;
+  }
+
+  
+
 }
