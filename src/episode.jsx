@@ -4,6 +4,22 @@ import Nav from "./components/nav";
 
 import { episodes } from "./content";
 
+function tagLink(tag) {
+  var link = "https://arctravelconnect.com/";
+
+  tag.tag.toLowerCase();
+
+  if (tag.indexOf("data") > -1) {
+    return "/episodes.html?filter=data-and-trends";
+  } else if (tag.indexOf("retailing") > -1) {
+    return "/episodes.html?filter=retailing";
+  } else if (tag == "innovation" && tags.indexOf("innovation") > -1) {
+    return "/episodes.html?innovation";
+  }
+
+  return link;
+}
+
 class Episode extends Component {
   constructor(props) {
     super(props);
@@ -63,11 +79,23 @@ class Episode extends Component {
                       />
                     </div>
                     <div className="tc22-episode-detail">
-                      {episodes[this.props.number - 1].tags}
-                      <i
-                        className="fa fa-caret-right ml-2"
-                        aria-hidden="true"
-                      ></i>
+                      {episodes[this.props.number - 1].tags
+                        .split(",")
+                        .map((tag, i) => {
+                          return (
+                            <>
+                              <a href="">
+                                {tag}
+                                <i
+                                  className="fa fa-caret-right ml-2"
+                                  aria-hidden="true"
+                                ></i>
+                              </a>
+                              <br />
+                              <br/>
+                            </>
+                          );
+                        })}
                     </div>
                     <div
                       className="tc22-speaker-titles"
