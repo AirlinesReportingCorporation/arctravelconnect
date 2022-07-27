@@ -12,7 +12,7 @@ class App extends Component {
         <div className="tc2021-main tc2021-main-v">
           <Nav />
           <div className="tc2021-header-container">
-            <div className="container" style={{ maxWidth: "1170px" }}>
+            <div className="container">
               <div className="row">
                 <div className="col-md-12">
                   <div className="tc2021-header-image">
@@ -41,7 +41,10 @@ class App extends Component {
                     <div className="container">
                       <div className="row align-items-center">
                         <div className="col-lg-6">
-                          <div class="usa-embed-container mb-0">
+                          <div
+                            class="usa-embed-container mb-0"
+                            style={{ border: "1px solid #808080" }}
+                          >
                             <iframe
                               width="700px"
                               src="https://www.youtube.com/embed/ylBV3q8-5IM"
@@ -52,17 +55,22 @@ class App extends Component {
                           </div>
                         </div>
                         <div className="col-lg-6">
-                          <h2 className="text-white">
-                            ARC TravelConnect Virtual Series: Growth and
-                            Innovation at the Denver Airport
-                          </h2>
-                          <a href="/episodes/growth-and-innovation-at-the-denver-international-airport/" className="tc22-watchnow">
-                            Watch Now{" "}
-                            <i
-                              className="fa fa-caret-right ml-2"
-                              aria-hidden="true"
-                            ></i>
-                          </a>
+                          <div className="tc22-current-copy">
+                            <h2 className="text-white">
+                              ARC TravelConnect Virtual Series: Growth and
+                              Innovation at the Denver Airport
+                            </h2>
+                            <a
+                              href="/episodes/growth-and-innovation-at-the-denver-international-airport/"
+                              className="tc22-watchnow"
+                            >
+                              Watch Now{" "}
+                              <i
+                                className="fa fa-caret-right ml-2"
+                                aria-hidden="true"
+                              ></i>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -103,7 +111,10 @@ class App extends Component {
                       the evolving fraud landscape, what consumer spending can
                       tell us about the future, and more.
                     </p>
-                    <a href="/episodes.html?filter=data-and-trends" className="tc22-link bold">
+                    <a
+                      href="/episodes.html?filter=data-and-trends"
+                      className="tc22-link bold"
+                    >
                       Watch Episodes On <br />
                       This Topic{" "}
                       <i
@@ -128,7 +139,10 @@ class App extends Component {
                       travel retailing experience, with focus on distribtion,
                       payments and technology.
                     </p>
-                    <a href="/episodes.html?retailing" className="tc22-link bold">
+                    <a
+                      href="/episodes.html?retailing"
+                      className="tc22-link bold"
+                    >
                       Watch Episodes On <br />
                       This Topic{" "}
                       <i
@@ -151,7 +165,10 @@ class App extends Component {
                       new ideas. We discuss work culture, the future of travel,
                       and other innovative topics with industry thought leaders.
                     </p>
-                    <a href="/episodes.html?filter=innovation" className="tc22-link bold">
+                    <a
+                      href="/episodes.html?filter=innovation"
+                      className="tc22-link bold"
+                    >
                       Watch Episodes On <br />
                       This Topic{" "}
                       <i
@@ -247,7 +264,7 @@ class App extends Component {
                       maxWidth: "768px",
                       margin: "0 auto",
                       fontSize: "20px",
-                      lineHeight: "30px"
+                      lineHeight: "30px",
                     }}
                   >
                     Travelers use a variety of platforms to shop, buy and

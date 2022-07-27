@@ -97,7 +97,7 @@ body a {
 
 .tc2021-header-container {
   background: #000000;
-  padding: 5rem 0;
+  padding: 0px 0 240px;
 }
 
 .tc2021-nav a.arc-logo:hover:after {
@@ -309,7 +309,8 @@ body .tc2021-assistance a:hover {
 }
 
 .tc2021-header-image {
-  max-width: 800px;
+  max-width: 600px;
+  padding-top: 30px;
   margin: 40px auto;
   z-index: 51;
   text-align: center;
@@ -1062,17 +1063,14 @@ Recap Page
 }
 
 .tc2021-main-v .tc2021-header-image {
-  padding: 0;
   margin: 0 auto;
-  max-width: 1600px;
 }
 
 .tc2021-main-v .tc2021-virtual {
   max-width: 1400px;
   padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 180px;
   margin: 0 auto;
-  
 }
 
 .tc2021-main-v .tc2021-virtual-inner {

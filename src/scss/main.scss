@@ -11,6 +11,15 @@
   .container {
     max-width: 1400px;
   }
+  .tc2021-header-container {
+    .container {
+      border-top: 1px solid #808080;
+    }
+  }
+}
+
+.tc22-current-copy {
+  padding: 0 60px;
 }
 
 .tc22-reachout {
