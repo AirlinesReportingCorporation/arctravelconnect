@@ -112,7 +112,7 @@ class App extends Component {
                       tell us about the future, and more.
                     </p>
                     <a
-                      href="/episodes.html?filter=data-and-trends"
+                      href="/episodes?filter=data-and-trends"
                       className="tc22-link bold"
                     >
                       Watch Episodes On <br />
@@ -140,7 +140,7 @@ class App extends Component {
                       payments and technology.
                     </p>
                     <a
-                      href="/episodes.html?retailing"
+                      href="/episodes?retailing"
                       className="tc22-link bold"
                     >
                       Watch Episodes On <br />
