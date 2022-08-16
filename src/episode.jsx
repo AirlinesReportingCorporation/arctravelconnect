@@ -123,6 +123,7 @@ class Episode extends Component {
                             <>
                               <img style={{maxWidth: "105px", width: "100%"}} src={speaker}>
                               </img>
+                              <br></br>
                             </>
                           );
                         })}
