@@ -120,7 +120,7 @@ class Episode extends Component {
                     >
                       {episodes[this.props.number - 1].speakers.map((speaker, i) => {
                           return (
-                            <div className="tc22-speaker">
+                            <div className="tc22-speaker-logo">
                               <img style={{maxWidth: "105px", width: "100%"}} src={speaker}>
                               </img>
                             </div>
