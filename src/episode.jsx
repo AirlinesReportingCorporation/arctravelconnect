@@ -118,7 +118,14 @@ class Episode extends Component {
                           : "none",
                       }}
                     >
-                      {episodes[this.props.number - 1].speakers}
+                      {episodes[this.props.number - 1].speakers.map((speaker, i) => {
+                          return (
+                            <>
+                              <img src={speaker}>
+                              </img>
+                            </>
+                          );
+                        })}
                     </div>
                     <div className="tc22-speaker-titles">
                       <img

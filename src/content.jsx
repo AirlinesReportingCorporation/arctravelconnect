@@ -1,4 +1,23 @@
 import React, { Component } from "react";
+var arc = "https://www2.arccorp.com/globalassets/arc-logos/corporate-logos/arc-logo-l-black.png";
+var threeVictors = "https://www2.arccorp.com/globalassets/home2/2022/icons/3-victors.png";
+var airlines4america = "https://www2.arccorp.com/globalassets/home2/2022/icons/airlines-4-america.png";
+var americanAirlines = "https://www2.arccorp.com/globalassets/home2/2022/icons/american-airlines.png";
+var bcg = "https://www2.arccorp.com/globalassets/home2/2022/icons/bcg.png";
+var denverAirport = "https://www2.arccorp.com/globalassets/home2/2022/icons/denver-airport.png";
+var digiTravel = "https://www2.arccorp.com/globalassets/home2/2022/icons/digi-travel.png";
+var gAdventures = "https://www2.arccorp.com/globalassets/home2/2022/icons/g-adventures.png";
+var gBTA = "https://www2.arccorp.com/globalassets/home2/2022/icons/gbta.png";
+var geminiAdvisory = "https://www2.arccorp.com/globalassets/home2/2022/icons/gemini-advisory.png";
+var hopper = "https://www2.arccorp.com/globalassets/home2/2022/icons/hopper.png";
+var mariott = "https://www2.arccorp.com/globalassets/home2/2022/icons/marriott.png";
+var masterCard = "https://www2.arccorp.com/globalassets/home2/2022/icons/mastercard.png";
+var salesforce = "https://www2.arccorp.com/globalassets/home2/2022/icons/salesforce.png";
+var seaTac = "https://www2.arccorp.com/globalassets/home2/2022/icons/sea-tac-airport.png";
+var southwest = "https://www2.arccorp.com/globalassets/home2/2022/icons/southwest.png";
+var theBeat = "https://www2.arccorp.com/globalassets/home2/2022/icons/the-beat.png";
+var united = "https://www2.arccorp.com/globalassets/home2/2022/icons/united.png";
+var zs = "https://www2.arccorp.com/globalassets/home2/2022/icons/zs.png";
 
 export const episodes = [
   {
@@ -27,7 +46,7 @@ export const episodes = [
     cta: "View Details",
     tags: "Data and Trends",
     title: <>2020 Outlook:<br></br> Travel Recovery Trends to Watch</>,
-    speakers: "",
+    speakers: [threeVictors, bcg, arc],
   },
   {
     episode: "2",
@@ -57,7 +76,7 @@ export const episodes = [
     cta: "View Details",
     tags: "Innovation",
     title: <>How Travel Systems are Adapting to COVID-19</>,
-    speakers: "",
+    speakers: [theBeat, arc],
   },
   {
     episode: "3",
@@ -83,7 +102,7 @@ export const episodes = [
     cta: "View Details",
     tags: "Retailing, Innovation",
     title: <>What's Next for Business Travel?</>,
-    speakers: "",
+    speakers: [mariott, seaTac, zs, arc],
   },
   {
     episode: "4",
@@ -109,7 +128,7 @@ export const episodes = [
     cta: "View Details",
     tags: "Data and Trends",
     title: <>What’s Really on the Dark Web?</>,
-    speakers: "",
+    speakers: [geminiAdvisory, arc],
   },
   {
     episode: "5",
@@ -131,7 +150,7 @@ export const episodes = [
     cta: "View Details",
     tags: "Data and Trends",
     title: <>Travel Recovery Trends to Watch in Fall 2020</>,
-    speakers: "",
+    speakers: [threeVictors, bcg, arc],
   },
   {
     episode: "6",
@@ -155,7 +174,7 @@ export const episodes = [
     cta: "View Details",
     tags: "Retailing, Innovation",
     title: <>Enhancing the Traveler Experience in Every Channel</>,
-    speakers: "",
+    speakers: [southwest, united, arc],
   },
   {
     episode: "7",
@@ -190,7 +209,7 @@ export const episodes = [
     cta: "View Details",
     tags: "Innovation",
     title: <>A Fireside Chat with Mike Premo and Dave Hilfman</>,
-    speakers: "",
+    speakers: [gBTA, arc],
   },
   {
     episode: "8",
@@ -228,7 +247,7 @@ export const episodes = [
     cta: "View Details",
     tags: "Data and Trends, Innovation",
     title: <>Exploring the Future of Travel with G Adventures</>,
-    speakers: "",
+    speakers: [gAdventures, arc],
   },
   {
     episode: "9",
@@ -262,7 +281,7 @@ export const episodes = [
     cta: "View Details",
     tags: "Retailing, Innovation",
     title: <>Assessing the Travel Industry with A4A</>,
-    speakers: "",
+    speakers: [airlines4america, arc],
   },
   {
     episode: "10",
@@ -291,7 +310,7 @@ export const episodes = [
     cta: "View Details",
     tags: "Retailing",
     title: <>Southwest Business Talks Distribution, Industry Recovery</>,
-    speakers: "",
+    speakers: [southwest, arc],
   },
   {
     episode: "11",
@@ -324,7 +343,7 @@ export const episodes = [
     cta: "View Details",
     tags: "Retailing, Innovation",
     title: <>Distribution, Recovery and Collaboration with American Airlines</>,
-    speakers: "",
+    speakers: [americanAirlines, arc],
   },
   {
     episode: "12",
@@ -355,7 +374,7 @@ export const episodes = [
     cta: "View Details",
     tags: "Data and Trends",
     title: <>Hopper on the Value of Fintech in Travel</>,
-    speakers: "",
+    speakers: [hopper, arc],
   },
   {
     episode: "13",
@@ -395,7 +414,7 @@ export const episodes = [
     cta: "View Details",
     tags: "Retailing",
     title: <>The Realities of Omnichannel Retailing</>,
-    speakers: "",
+    speakers: [digiTravel, salesforce, arc],
   },
   {
     episode: "14",
@@ -432,7 +451,7 @@ export const episodes = [
     cta: "View Details",
     tags: "Data and Trends",
     title: <>Using Consumer Spending to Track Travel Trends</>,
-    speakers: "",
+    speakers: [masterCard, arc],
   },
   {
     episode: "15",
@@ -465,6 +484,6 @@ export const episodes = [
         Denver International Airport
       </>
     ),
-    speakers: "",
+    speakers: [denverAirport, arc],
   },
 ];
