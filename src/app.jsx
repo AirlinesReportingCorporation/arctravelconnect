@@ -166,7 +166,7 @@ class App extends Component {
                       and other innovative topics with industry thought leaders.
                     </p>
                     <a
-                      href="/episodes.html?filter=innovation"
+                      href="/episodes?filter=innovation"
                       className="tc22-link bold"
                     >
                       Watch Episodes On <br />
