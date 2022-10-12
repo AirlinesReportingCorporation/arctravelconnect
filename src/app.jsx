@@ -12,7 +12,15 @@ class App extends Component {
         <div className="tc2021-main tc2021-main-v">
           <Nav />
           <div className="tc2021-header-container">
-            <div className="container">
+            <div className="container"  style={{borderTop: "none"}}>
+              <div className="row">
+                <a target="_blank" href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/atpco-arc-partner-elevate-travelconnect-2023?utm_source=travelconnect">
+                  <img className="pb-3"
+                    src="https://arctravelconnect.com/globalassets/Home2/2022/TC-Website-Ad.png"
+                    alt="ARC TravelConnect"
+                  />
+                </a>
+              </div>
               <div className="row">
                 <div className="col-md-12">
                   <div className="tc2021-header-image">
@@ -139,10 +147,7 @@ class App extends Component {
                       travel retailing experience, with focus on distribtion,
                       payments and technology.
                     </p>
-                    <a
-                      href="/episodes?retailing"
-                      className="tc22-link bold"
-                    >
+                    <a href="/episodes?retailing" className="tc22-link bold">
                       Watch Episodes On <br />
                       This Topic{" "}
                       <i
