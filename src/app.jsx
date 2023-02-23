@@ -13,14 +13,14 @@ class App extends Component {
           <Nav />
           <div className="tc2021-header-container">
             <div className="container"  style={{borderTop: "none"}}>
-              {/* <div className="row">
-                <a target="_blank" href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/atpco-arc-partner-elevate-travelconnect-2023?utm_source=travelconnect">
+              <div className="row">
+                <a target="_blank" href="https://atpcodigital.co1.qualtrics.com/jfe/form/SV_cLQ4SgQDZfRd21E?utm_source=homepage-card">
                   <img className="pb-3"
-                    src="https://arctravelconnect.com/globalassets/Home2/2022/TC-Website-Ad.png"
+                    src="https://arctravelconnect.com/globalassets/Home2/TC-Website-Ad.png"
                     alt="ARC TravelConnect"
                   />
                 </a>
-              </div> */}
+              </div>
               <div className="row">
                 <div className="col-md-12">
                   <div className="tc2021-header-image">
