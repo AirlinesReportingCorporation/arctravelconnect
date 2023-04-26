@@ -21,7 +21,7 @@ class Nav extends Component {
                 </a>
                 <a href="/episodes">Episodes</a>
                 <a href="/episodes?filter=data-and-trends">Data & Trends</a>
-                <a href="/episodes?filter=data-and-trends">Retailing</a>
+                <a href="/episodes?filter=retailing">Retailing</a>
                 <a href="/episodes?filter=innovation">Innovation</a>
                 <div className="arc-logo ml-lg-auto ml-md-auto d-sm-block">
                   <div className="d-flex justify-content-center">
